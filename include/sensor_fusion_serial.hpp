@@ -1,3 +1,3 @@
 #pragma once
 
-void fusion_serial();
+double fusion_serial();

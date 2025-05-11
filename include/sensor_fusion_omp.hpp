@@ -1,3 +1,3 @@
 #pragma once
 
-void fusion_openmp();
+double fusion_openmp();

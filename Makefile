@@ -14,11 +14,11 @@ TARGET = RailVision
 
 # Default rule to build the program
 $(TARGET): $(OBJ)
-	$(CXX) $(OBJ) -o $(TARGET)
+	$(CXX) $(OBJ) -o $(TARGET) $(OMPFLAGS)
 
 # Rule to compile each .cpp file into a .o file
 %.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) $(OMPFLAGS) -c $< -o $@
 
 # Clean rule to remove generated files
 clean:
